@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "TestGitHubRepo"
-version = "0.0.0"
+version = "1.0.1"
 description = "Just to test GitHub stuff"
 homepage = "https://github.com/freddieknets/TestGitHubRepo"
 repository = "https://github.com/freddieknets/TestGitHubRepo"
