@@ -18,10 +18,10 @@ fi
 # Update version in temporary branch
 poetry version $1
 new_ver=$( poetry version | awk '{print $2;}' )
-sed -i "s/\(__version__ =\).*/\1 '"${new_ver}"'/"         TestGitHubRepo/__init__.py
+sed -i "s/\(__version__ =\).*/\1 '"${new_ver}"'/"         testgithubrepo/__init__.py
 sed -i "s/\(assert __version__ ==\).*/\1 '"${new_ver}"'/" tests/test_version.py
 git reset
-git add pyproject.toml TestGitHubRepo/__init__.py tests/test_version.py
+git add pyproject.toml testgithubrepo/__init__.py tests/test_version.py
 git commit -m "Updated version number to v"${new_ver}"."
 git push
 
