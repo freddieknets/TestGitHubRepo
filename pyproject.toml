@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "TestGitHubRepo"
+version = "0.0.1"
+description = "Just to test GitHub stuff"
+homepage = "https://github.com/freddieknets/TestGitHubRepo"
+repository = "https://github.com/freddieknets/TestGitHubRepo"
+authors = [
+           "Frederik F. Van der Veken <frederik@cern.ch>"
+]
+readme = "README.md"
+license = "Apache 2.0"
+include = [ "LICENSE", "NOTICE" ]
+
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+#numpy
+#pandas
+#scipy
+#xobjects
+#xdeps
+#xpart
+#xtrack
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+# Needed for pip install -e (BTW: need pip version 22)
+requires = ["poetry-core>=1.0.8"]
+build-backend = "poetry.core.masonry.api"
